@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title> Dottis Tecnologia </title>
+
+        <!-- viewport meta to reset iPhone inital scale -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        
+
+        <!-- Última versão JavaScript compilada e minificada -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+        <!-- Última versão CSS compilada e minificada -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/resCarousel.css" rel="stylesheet" type="text/css">
+
+        <!-- Tema opcional -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap-reboot.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+    </head>
+
+    <body>
+        <header>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                    <div class="box box-right"></div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <!-- menu do canto superior direito-->
+                    <div class="menu-full">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                    </div>
+                    <!-- fim menu do canto superior direito-->
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav" >
+                        <li class="nav-item"><a class="nav-link conta" 
+                            href='index.html'>Pagina Inicial</a></li>
+                    </ul>
+                </div>
+                </nav>
+                </div>
+            </header>
+
+            <!-- Começo do Formulario-->
+            <form>
+
+                <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;" >
+                    <label for="inputName"></label>
+                    <input style="background-color:rgb(240, 240, 240);" 
+                    type="text" class="form-control" id="inputName" 
+                    placeholder="Coloque o seu Primeiro Nome" required>
+                </div>
+
+                <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                    <label for="inputSobrenome"></label>
+                    <input style="background-color:rgb(240, 240, 240);" 
+                    type="text" class="form-control" id="inputSobrenome" 
+                    placeholder="Coloque o seu Sobrenome" required>
+                </div>
+
+                <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                    <label for="inputDataNascimento"></label>
+                    <input style="background-color:rgb(240, 240, 240);" 
+                    type="date" class="form-control" id="inputDataNascimento" 
+                    placeholder="Coloque a sua Data de Nascimento" required>
+                </div>
+
+                    <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                        <label for="inputEmail"></label>
+                        <input style="background-color:rgb(240, 240, 240);" 
+                        type="email" class="form-control" id="inputEmail" 
+                        placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                        <label for="inputNacionalidade"></label>
+                        <input style="background-color:rgb(240, 240, 240);" 
+                        type="text" class="form-control" id="inputNacionalidade" 
+                        placeholder="Nacionalidade" required>
+                    </div>
+
+
+                    <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                        <label for="inputTelefone"></label>
+                        <input style="background-color:rgb(240, 240, 240);"
+                        type="tel" class="form-control" id="inputTelefone"
+                        placeholder="Ex.: +00 (00) 0000-0000" required>
+                    </div>
+
+
+                <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                    <label for="inputSexo" required></label>
+                        <select style="background-color:rgb(240, 240, 240);" id="inputSexo" class="form-control" >
+                            <option selected> Sexo </option>
+                            <option>Homem</option>
+                            <option>Feminino</option>
+                            <option>Outro(a)</option>
+                        </select>
+                </div>
+
+                <div class="form-group col-md-6 offset-md-3" style="margin-bottom: 1px;">
+                    <label for="inputEstadoCivil" required></label>
+                        <select style="background-color:rgb(240, 240, 240);" 
+                        id="inputEstadoCivil" class="form-control" >
+                            <option selected>Estado Civil </option>
+                            <option>Solteiro</option>
+                            <option>Casado</option>
+                            <option>Outro</option>
+                        </select>
+                </div>
+
+            <div class="form-group col-md-6 offset-md-3" style=" margin-top: 16px; border-radius: 4px; font-weight: bold;
+            border: none;" >
+                <button type="submit" onclick="myFunction()" style="background-color:#707070"  class="btn-lg btn-block "><font color="white" data-toggle="modal" data-target="#exampleModal">Salvar</font>
+                </button>
+            </div>
+        </form>
+<!-- Fim  do Formulario-->
+<script>
+    function myFunction() {
+      confirm("Sua conta está em análise. Agradeçemos pela preferência Equipe Dottis!");
+    }
+    </script>
+</html>
